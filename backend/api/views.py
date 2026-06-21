@@ -11,7 +11,9 @@ class TodoListCreateView(ListCreateAPIView):
     serializer_class = TodoSerializer
 
     def get_queryset(self):
-        return Todo.objects.filter(user=self.request.user)
+        # return Todo.objects.filter(user=self.request.user)
+        id_value = self.request.query_params.get("id")
+        return Todo.objects.filter(id=id_value)
 
     def perform_create(self, serializer):
         return serializer.save(user=self.request.user)
@@ -20,7 +22,9 @@ class TodoRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     serializer_class = TodoSerializer
 
     def get_queryset(self):
-        return Todo.objects.filter(user=self.request.user)
+        # return Todo.objects.filter(user=self.request.user)
+        id_value = self.request.query_params.get("id")
+        return Todo.objects.filter(id=id_value)
     
 class RootAPIView(APIView):
     def get(self,request):
