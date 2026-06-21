@@ -13,7 +13,8 @@ class TodoListCreateView(ListCreateAPIView):
     def get_queryset(self):
         # return Todo.objects.filter(user=self.request.user)
         id_value = self.request.query_params.get("id")
-        return Todo.objects.filter(id=id_value)
+        # return Todo.objects.filter(id=id_value)
+        return Todo.objects.all()
 
     def perform_create(self, serializer):
         return serializer.save(user=self.request.user)
