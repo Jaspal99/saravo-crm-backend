@@ -1,0 +1,126 @@
+# Python/Django project .gitignore
+# See https://github.com/github/gitignore for examples
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# PyBuilder
+target/
+
+# Virtual environments
+env/
+venv/
+ENV/
+.env/
+.venv/
+venv.bak/
+env.bak/
+**/env/
+
+# pyenv
+.python-version
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+# If you track a source `static/` folder, remove the next line
+static/
+
+# Django collected static
+# collectstatic will put files here by default
+static_root/
+
+# Sphinx documentation
+docs/_build/
+
+# Translations
+*.mo
+*.pot
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# IDEs and editors
+.idea/
+.vscode/
+__pycache__/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Jupyter
+.ipynb_checkpoints
+
+# Pyright / Type checkers
+.pyrightcache/
+
+# mypy
+.mypy_cache/
+
+# Profiling
+profiler_files/
+
+# Coverage and reports
+reports/
+
+# Environment and secrets
+.env
+.env.*
+secrets.yml
+credentials.json
+
+# Logs
+*.log
+
+# Node (in case frontend exists)
+node_modules/
+
+# Packages
+*.egg-info/
+*.egg
